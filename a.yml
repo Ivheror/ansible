@@ -3,5 +3,5 @@
   become: yes
   tasks:
     - name: install geany
-      apt: name=geany state=latest
+      yum: name=geany state=latest
 
