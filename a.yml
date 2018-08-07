@@ -1,7 +1,7 @@
 ---
-- name: Hello World Sample
-  hosts: all
+- hosts: 127.0.0.1
+  become: yes
   tasks:
-    - name: Welcome
-      debug:
-        msg: "Hello Ivan"
+    - name: install geany
+      apt: name=geany update_cache=yes state=latest
+
