@@ -3,5 +3,5 @@
   become: yes
   tasks:
     - name: install geany
-      apt: name=geany update_cache=yes state=latest
+      apt: name=geany state=latest
 
